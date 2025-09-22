@@ -19,9 +19,9 @@ If intResponse = 6 Then ' Yes
     If hasCDDrive Then
         objShell.Run "wmic cdrom where driveletter!=null call eject"
     Else
-        objShell.Popup "No free cupholder for you lil bro.", 0, "Best cupholder for free!"
+        objShell.Popup "Sorry we are out of cupholders at the moment", 0, "Best cupholder for free!"
     End If
 ElseIf intResponse = 7 Then ' No
-    objShell.Popup "Ok lil bro", 0, "Fuck off lil bro"
+    objShell.Popup "No cupholders for you then", 0, "Best cupholder for free!"
 End If
 
